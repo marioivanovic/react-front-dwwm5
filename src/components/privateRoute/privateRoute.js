@@ -5,7 +5,7 @@ import { useAuth } from '../../hooks/useAuth';
 // Composant pour protéger les routes qui nécessitent une authentification
 // Si utilisateur connecté, on affiche le composant enfant
 // Sinon, utilisateur redirigé vers la page de connexion
-const PrivateRoute = ({ children, requiredRole }) => {
+const PrivateRoute = ({ chidren, requiredRole }) => {
     const { user, isAuthenticated } = useAuth();
     const location = useLocation();
 
