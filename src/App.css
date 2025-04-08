@@ -1,0 +1,40 @@
+nav {
+  background-color: inherit; /* Prend la couleur du body */
+  padding: 10px;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.app.light {
+  background-color: #f8f9fa;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.app.dark {
+  background-color: #000000;
+  color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+}
+
+.app.light a {
+  color: #0066cc;
+}
+
+.app.dark a {
+  color: #66b0ff;
+}
+
+/* .app.light button {
+    background: #e9ecef;
+    color: #000000;
+} */
+
+/* .app.dark button {
+    background: #343a40;
+    color: #ffffff;
+} */
