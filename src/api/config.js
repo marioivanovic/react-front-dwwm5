@@ -30,7 +30,7 @@ export const userAPI = {
     updateUser: (id, userData) => api.put(`/user/${id}`, userData),
 
     deleteUser: (id) => api.delete(`/user/${id}`),
-    
+
     updateProfileImage: (id, imageFile) => {
         const formData = new FormData();
         formData.append('profileImage', imageFile);
@@ -53,19 +53,19 @@ export const authAPI = {
 
 export const dishAPI = {
     getAllDishes: () => api.get('/dishes'),
-    
+
     getDish: (id) => api.get(`/dish/${id}`),
-    
+
     createDish: (dishData) => api.post('/dish', dishData),
-    
+
     updateDish: (id, dishData) => api.put(`/dish/${id}`, dishData),
-    
+
     deleteDish: (id) => api.delete(`/dish/${id}`),
-    
+
     addDishImages: (dishId, formData) => api.post(`/dish/${dishId}/images`, formData),
-    
+
     setDishPrimaryImage: (dishId, imageId) => api.put(`/dish/${dishId}/images/${imageId}/primary`),
-    
+
     deleteDishImage: (dishId, imageId) => api.delete(`/dish/${dishId}/images/${imageId}`)
 };
 
@@ -73,3 +73,8 @@ export const ingredientAPI = {
     getAllIngredients: () => api.get('/ingredients'),
     createIngredient: (ingredientData) => api.post('/ingredient', ingredientData)
 };
+
+export const reviewsAPI = {
+    getAllReviews: () => api.get('/reviews'),
+    createReview: (reviewData) => api.post('/reviews', reviewData)
+}
